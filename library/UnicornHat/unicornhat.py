@@ -233,9 +233,11 @@ def brightness(b=0.2):
 
     brightness = int(b*255.0)
 
+    """
     if brightness < 30:
         print("Warning: Low brightness chosen, your UnicornHAT might not light up!")
-
+    """
+    
     ws2812.setBrightness(brightness)
 
 
